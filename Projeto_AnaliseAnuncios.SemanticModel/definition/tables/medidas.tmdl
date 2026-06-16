@@ -1,0 +1,187 @@
+table medidas
+	lineageTag: 11085052-faf7-4d50-93ab-282e09018d49
+
+	measure 'Preço Médio m²' =
+			
+			AVERAGEX(
+			    fato_anuncios,
+			    DIVIDE(fato_anuncios[preco_atual], fato_anuncios[area_m2])
+			)
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 44b59090-67eb-4003-8cc0-0c06e9212a9b
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Total Anúncios' = COUNTROWS(fato_anuncios)
+		formatString: 0
+		lineageTag: 6f7460da-34b5-4a4a-9f8e-ddb208f5bdc1
+
+	measure 'Preço Médio m² relevevante' =
+			
+			VAR MinimoAmostras = 5 -- Aqui você define o corte (ex: 3 ou 5 anúncios)
+			VAR TotalAnunciosNoContexto = [Total Anúncios] -- Sua medida de contagem de linhas
+			
+			RETURN
+			IF(
+			    TotalAnunciosNoContexto >= MinimoAmostras,
+			    [Preço Médio m²], -- Sua medida que calcula a média de vendas
+			    BLANK()
+			)
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 06718975-e7df-40ce-ac74-b7a0c5f9ddc7
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Ticket Médio' = ```
+			
+			VAR MinimoAmostras = 5 
+			VAR TotalAnunciosNoContexto = [Total Anúncios] 
+			
+			RETURN
+			IF(
+			    TotalAnunciosNoContexto >= MinimoAmostras,
+			    MEDIAN(fato_anuncios[preco_atual]), -- Usando a Mediana que acabamos de discutir
+			    BLANK()
+			)
+			```
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: a8cbc2bd-48ee-469e-b702-c0067abf6172
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Yield Mensal %' = ```
+			
+			VAR MinimoAmostras = 10 
+			
+			-- 1. Calcula o m² e a quantidade APENAS para VENDA
+			VAR PrecoM2_Venda = 
+			    CALCULATE(
+			        MEDIAN(fato_anuncios[preco_m2]), 
+			        fato_anuncios[tipo_negocio] = "Venda"
+			    )
+			VAR Qtd_Venda = 
+			    CALCULATE(
+			        COUNTROWS(fato_anuncios), 
+			        fato_anuncios[tipo_negocio] = "Venda"
+			    )
+			
+			-- 2. Calcula o m² e a quantidade APENAS para ALUGUEL
+			VAR PrecoM2_Aluguel = 
+			    CALCULATE(
+			        MEDIAN(fato_anuncios[preco_m2]), 
+			        fato_anuncios[tipo_negocio] = "Aluguel"
+			    )
+			VAR Qtd_Aluguel = 
+			    CALCULATE(
+			        COUNTROWS(fato_anuncios), 
+			        fato_anuncios[tipo_negocio] = "Aluguel"
+			    )
+			
+			-- 3. Retorna o Yield apenas se o bairro tiver amostra suficiente nos DOIS cenários
+			RETURN
+			IF(
+			    Qtd_Venda >= MinimoAmostras && Qtd_Aluguel >= MinimoAmostras,
+			    DIVIDE(PrecoM2_Aluguel, PrecoM2_Venda, BLANK()),
+			    BLANK()
+			)
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 189e3b17-be95-44fa-8d42-17ca46bab3dd
+
+	measure 'Custo Fixo Mensal' = ```
+			
+			CALCULATE(
+			    AVERAGE(fato_anuncios[condominio]) + AVERAGE(fato_anuncios[iptu]),
+			    fato_anuncios[tipo_negocio] = "Venda" 
+			)
+			```
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 3e634a11-4f51-41d8-b441-d72143169fc8
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Analise de Custos Cascata' = ```
+			
+			VAR ReceitaAluguel = 
+			    CALCULATE(
+			        MEDIAN(fato_anuncios[preco_atual]), 
+			        fato_anuncios[tipo_negocio] = "Aluguel"
+			    )
+			
+			VAR DespesaCondominio = 
+			    CALCULATE(
+			        AVERAGE(fato_anuncios[condominio]), 
+			        fato_anuncios[tipo_negocio] = "Venda"
+			    ) * -1
+			
+			VAR DespesaIPTU = 
+			    CALCULATE(
+			        AVERAGE(fato_anuncios[iptu]), 
+			        fato_anuncios[tipo_negocio] = "Venda"
+			    ) * -1
+			
+			RETURN
+			SWITCH(
+			    MAX('Dim_Cascata'[Ordem]),
+			    1, ReceitaAluguel,
+			    2, DespesaCondominio,
+			    3, DespesaIPTU,
+			    BLANK()
+			)
+			```
+		formatString: #,0.00
+		lineageTag: 4da8b73d-4091-4381-99ae-2be3e8a8f9e9
+
+	measure Media_Preco_M2_Bairro =
+			
+			CALCULATE(
+			    MEDIAN(fato_anuncios[preco_m2]),
+			    ALLEXCEPT(fato_anuncios, fato_anuncios[bairro])
+			)
+		lineageTag: 1080bd55-bf36-42da-be87-e4f33aecc63f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Media_Area_Bairro =
+			
+			CALCULATE(
+			    MEDIAN(fato_anuncios[area_m2]),
+			    ALLEXCEPT(fato_anuncios, fato_anuncios[bairro])
+			)
+		lineageTag: ce7a4baf-f693-4b81-9608-396b19bbf10c
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Media_Condominio_Bairro =
+			
+			CALCULATE(
+			    MEDIAN(fato_anuncios[condominio]),
+			    ALLEXCEPT(fato_anuncios, fato_anuncios[bairro])
+			)
+		lineageTag: c1abde78-ee9c-40ca-8cbf-8ea1426312ed
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Coluna 1'
+		dataType: string
+		isHidden
+		lineageTag: dabed183-7428-481e-bac4-8b2a79d45525
+		summarizeBy: none
+		sourceColumn: Coluna 1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition medidas = m
+		mode: import
+		source =
+				let
+				  Origem = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"Coluna 1" = _t])
+				in
+				  Origem
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

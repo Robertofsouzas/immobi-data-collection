@@ -1,0 +1,37 @@
+table dim_tipoNegocio
+	lineageTag: 5f66f5cd-ae41-4c83-8d06-0f294e8f0040
+
+	column tipo_negocio
+		dataType: string
+		lineageTag: 44b82763-12fc-42af-8933-79218ec3bdb7
+		summarizeBy: none
+		sourceColumn: tipo_negocio
+
+		annotation SummarizationSetBy = Automatic
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: c3a7021f-5196-4569-8cfa-266116a841b6
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_tipoNegocio = m
+		mode: import
+		source =
+				let
+				    Fonte = fato_imoveis,
+				    #"Outras Colunas Removidas" = Table.SelectColumns(Fonte,{"tipo_negocio"}),
+				    #"Índice Adicionado" = Table.AddIndexColumn(#"Outras Colunas Removidas", "id", 0, 1, Int64.Type),
+				    #"Duplicatas Removidas" = Table.Distinct(#"Índice Adicionado"),
+				    #"Duplicatas Removidas1" = Table.Distinct(#"Duplicatas Removidas", {"tipo_negocio"}),
+				    #"Colunas Reordenadas" = Table.ReorderColumns(#"Duplicatas Removidas1",{"id", "tipo_negocio"})
+				in
+				    #"Colunas Reordenadas"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

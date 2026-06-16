@@ -1,0 +1,44 @@
+table dim_localidade
+	lineageTag: e6db1339-1e37-4d67-a57b-6e7491874a98
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: 4d88b66b-7aae-423c-810c-0da97698ad67
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column cidade
+		dataType: string
+		lineageTag: 21713709-e23c-4c61-8f6b-2d51d7ea6053
+		summarizeBy: none
+		sourceColumn: cidade
+
+		annotation SummarizationSetBy = Automatic
+
+	column bairro
+		dataType: string
+		lineageTag: e507348f-5aad-417a-a999-808d4ee9a694
+		summarizeBy: none
+		sourceColumn: bairro
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_localidade = m
+		mode: import
+		source =
+				let
+				    Fonte = fato_imoveis,
+				    #"Outras Colunas Removidas" = Table.SelectColumns(Fonte,{"bairro", "cidade"}),
+				    #"Duplicatas Removidas" = Table.Distinct(#"Outras Colunas Removidas"),
+				    #"Índice Adicionado" = Table.AddIndexColumn(#"Duplicatas Removidas", "id", 0, 1, Int64.Type),
+				    #"Colunas Reordenadas" = Table.ReorderColumns(#"Índice Adicionado",{"id", "bairro"})
+				in
+				    #"Colunas Reordenadas"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

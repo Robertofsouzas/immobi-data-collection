@@ -1,0 +1,21 @@
+relationship AutoDetected_b2bee154-adac-455e-8e0a-2b91149c1ed1
+	fromColumn: fato_anuncios.bairro
+	toColumn: dim_localidade.bairro
+
+relationship AutoDetected_0fcb4dfd-2797-402d-a6b9-7ea028ed56fb
+	fromColumn: fato_anuncios.tipo_negocio
+	toColumn: dim_tipoNegocio.tipo_negocio
+
+relationship AutoDetected_f1000b5c-1390-4ede-961b-0d9088c79fdf
+	fromColumn: fato_anuncios.tipo_imovel
+	toColumn: dim_tipoImovel.tipo_imovel
+
+relationship a9b95ce0-2536-47f0-840b-ef3d75f8101a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fato_anuncios.data_ultima_coleta
+	toColumn: LocalDateTable_ab121a4e-6e7d-4b4e-a47c-93746e5d3cd7.Date
+
+relationship 143b546b-0f3f-b427-26bf-7bc001ee4591
+	fromColumn: fato_anuncios.data_primeira_coleta
+	toColumn: dim_calendario.Data
+

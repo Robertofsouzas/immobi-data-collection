@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "110040fba504aa232070",
+  "position": {
+    "x": 105.77777777777777,
+    "y": 41.777777777777779,
+    "z": 6000,
+    "height": 63.111111111111114,
+    "width": 464.88888888888891,
+    "tabOrder": 4000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Inteligência de Investimentos",
+                    "textStyle": {
+                      "fontSize": "20pt",
+                      "color": "#b3b3b3"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

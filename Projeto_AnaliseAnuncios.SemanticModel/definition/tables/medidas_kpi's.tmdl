@@ -1,0 +1,52 @@
+table 'medidas_kpi''s'
+	lineageTag: 04f7684e-932a-4f1a-acd1-d3d9e188994e
+
+	measure Score_Medio_Mercado =
+			
+			AVERAGEX(fato_anuncios, [Score_Oportunidade])
+		lineageTag: 0be1cd44-aa07-4004-9c7f-8aaaada0e9da
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Qtd_Oportunidades_Premium =
+			
+			COUNTROWS(
+			    FILTER(fato_anuncios, [Score_Oportunidade] >= 70)
+			)
+		formatString: 0
+		lineageTag: fe79e5f4-31c2-4c1e-912b-b6fc09264560
+
+	measure Melhor_Bairro_Score =
+			
+			VAR _tabela =
+			    ADDCOLUMNS(
+			        VALUES(fato_anuncios[bairro]),
+			        "ScoreMedio", CALCULATE(AVERAGEX(fato_anuncios, [Score_Oportunidade]))
+			    )
+			RETURN
+			    MAXX(TOPN(1, _tabela, [ScoreMedio], DESC), fato_anuncios[bairro])
+		lineageTag: 6973415e-f4a8-4031-af86-84bde219b2e7
+
+	column 'Coluna 1'
+		dataType: string
+		isHidden
+		lineageTag: 25fb7d2a-f807-485d-b088-42f16d67e1c7
+		summarizeBy: none
+		sourceColumn: Coluna 1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'medidas_kpi''s' = m
+		mode: import
+		source =
+				let
+				  Origem = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"Coluna 1" = _t])
+				in
+				  Origem
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

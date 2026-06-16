@@ -1,0 +1,14 @@
+expression fato_imoveis =
+		let
+		  Origem = Sql.Database("DESKTOP-MGR8475", "imoveis"),
+		  #"Navegação 1" = Origem{[Schema = "dbo", Item = "fato_imoveis"]}[Data],
+		    #"Valor Substituído" = Table.ReplaceValue(#"Navegação 1","Accommodation","Ponto comercial",Replacer.ReplaceText,{"tipo_imovel"}),
+		    #"Linhas Filtradas" = Table.SelectRows(#"Valor Substituído", each ([tipo_imovel] <> "Ponto comercial") and ([bairro] <> "Barris" and [bairro] <> "Boca do Rio" and [bairro] <> "Brotas" and [bairro] <> "Cabula"))
+		in
+		  #"Linhas Filtradas"
+	lineageTag: 22d6bd58-eff1-4e41-a4db-207f1150863a
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

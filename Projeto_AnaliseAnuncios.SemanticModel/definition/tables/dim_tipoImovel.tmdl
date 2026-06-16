@@ -1,0 +1,36 @@
+table dim_tipoImovel
+	lineageTag: 3e39a0d1-6ddb-46e5-8a9a-bc3840b2d30d
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: 21ee9ca2-dcfb-4061-9ba6-bf04a66637d1
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column tipo_imovel
+		dataType: string
+		lineageTag: 4dcbb812-8d75-4ca7-b7c4-24bb9e68ab32
+		summarizeBy: none
+		sourceColumn: tipo_imovel
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_tipoImovel = m
+		mode: import
+		source =
+				let
+				    Fonte = fato_imoveis,
+				    #"Outras Colunas Removidas" = Table.SelectColumns(Fonte,{"tipo_imovel"}),
+				    #"Duplicatas Removidas" = Table.Distinct(#"Outras Colunas Removidas"),
+				    #"Índice Adicionado" = Table.AddIndexColumn(#"Duplicatas Removidas", "id", 0, 1, Int64.Type),
+				    #"Colunas Reordenadas" = Table.ReorderColumns(#"Índice Adicionado",{"id", "tipo_imovel"})
+				in
+				    #"Colunas Reordenadas"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

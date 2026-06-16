@@ -1,0 +1,373 @@
+table fato_anuncios
+	lineageTag: c50fece6-addf-4fb6-a2b5-306b9414d926
+
+	column id
+		dataType: string
+		lineageTag: b0ee8c40-b000-48d8-97ca-73956c37070b
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column titulo
+		dataType: string
+		lineageTag: 7f467f95-f856-4295-aee7-23904dc44b52
+		summarizeBy: none
+		sourceColumn: titulo
+
+		annotation SummarizationSetBy = Automatic
+
+	column url
+		dataType: string
+		lineageTag: 8f5da094-6b81-43ac-9db2-1792d00ac6ff
+		dataCategory: ImageUrl
+		summarizeBy: none
+		sourceColumn: url
+
+		annotation SummarizationSetBy = Automatic
+
+	column tipo_negocio
+		dataType: string
+		lineageTag: 10510af4-69f4-4062-a6df-ca79177bd3ac
+		summarizeBy: none
+		sourceColumn: tipo_negocio
+
+		annotation SummarizationSetBy = Automatic
+
+	column tipo_imovel
+		dataType: string
+		lineageTag: 3f4c7039-b7cd-49ce-9ef3-ac126c0a335d
+		summarizeBy: none
+		sourceColumn: tipo_imovel
+
+		annotation SummarizationSetBy = Automatic
+
+	column bairro
+		dataType: string
+		lineageTag: 71d8eb9b-f87e-45f2-a11c-183be9c0fb6f
+		summarizeBy: none
+		sourceColumn: bairro
+
+		annotation SummarizationSetBy = Automatic
+
+	column cidade
+		dataType: string
+		lineageTag: 69238dd1-a750-48ab-8132-bb71ea51e10f
+		summarizeBy: none
+		sourceColumn: cidade
+
+		annotation SummarizationSetBy = Automatic
+
+	column estado
+		dataType: string
+		lineageTag: 3cf57e6c-56f7-4315-b779-8083bb083ab0
+		summarizeBy: none
+		sourceColumn: estado
+
+		annotation SummarizationSetBy = Automatic
+
+	column area_m2
+		dataType: int64
+		formatString: 0
+		lineageTag: a9383a56-c9a1-4e15-a0ae-6248944bbff3
+		summarizeBy: sum
+		sourceColumn: area_m2
+
+		annotation SummarizationSetBy = Automatic
+
+	column quartos
+		dataType: int64
+		formatString: 0
+		lineageTag: c82ce26b-dbdb-45c7-b8ae-3b986b76451f
+		summarizeBy: sum
+		sourceColumn: quartos
+
+		annotation SummarizationSetBy = Automatic
+
+	column banheiros
+		dataType: int64
+		formatString: 0
+		lineageTag: 915bceba-0f29-43a8-bec3-f06e43c92d43
+		summarizeBy: sum
+		sourceColumn: banheiros
+
+		annotation SummarizationSetBy = Automatic
+
+	column garagens
+		dataType: double
+		formatString: 0
+		lineageTag: 418fabd3-5f3b-4657-8478-8ba94b80df3b
+		summarizeBy: sum
+		sourceColumn: garagens
+
+		annotation SummarizationSetBy = Automatic
+
+	column preco_m2
+		dataType: double
+		lineageTag: 8a71837a-a1e1-4978-80ca-3d69a4249b7c
+		summarizeBy: sum
+		sourceColumn: preco_m2
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column condominio
+		dataType: double
+		lineageTag: ced7cbe6-1a5a-49ed-bbf2-1e1f092427ba
+		summarizeBy: none
+		sourceColumn: condominio
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column iptu
+		dataType: double
+		lineageTag: 20c467da-f12f-4e42-933c-cbe231476451
+		summarizeBy: none
+		sourceColumn: iptu
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Localizacao_Mapa = fato_anuncios[bairro] & ", " & fato_anuncios[cidade] & " - " & fato_anuncios[estado]
+		lineageTag: 1d74bbc0-0cc5-42d8-8a05-3674dacd1928
+		dataCategory: Place
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column url_foto
+		dataType: string
+		lineageTag: 01855c5c-357e-442e-b8fb-9a414e2c1a6d
+		dataCategory: ImageUrl
+		summarizeBy: none
+		sourceColumn: url_foto
+
+		annotation SummarizationSetBy = Automatic
+
+	column preco_original
+		dataType: double
+		lineageTag: 39370659-a901-4365-a28b-b4b6392d1fc9
+		summarizeBy: sum
+		sourceColumn: preco_original
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column preco_atual
+		dataType: double
+		lineageTag: 8de6646d-264e-4d82-bd10-ce0f01c327c5
+		summarizeBy: sum
+		sourceColumn: preco_atual
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column data_primeira_coleta
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: c7ce79d9-50d0-439d-a527-b2f9bbca6113
+		summarizeBy: none
+		sourceColumn: data_primeira_coleta
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column data_ultima_coleta
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 4319c2fc-c385-43bd-bb43-1d7e8694fde5
+		summarizeBy: none
+		sourceColumn: data_ultima_coleta
+
+		variation Variation
+			isDefault
+			relationship: a9b95ce0-2536-47f0-840b-ef3d75f8101a
+			defaultHierarchy: LocalDateTable_ab121a4e-6e7d-4b4e-a47c-93746e5d3cd7.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Score_Oportunidade =
+			
+			VAR _preco_m2  = fato_anuncios[preco_m2]
+			VAR _area      = fato_anuncios[area_m2]
+			VAR _cond      = fato_anuncios[condominio]
+			
+			VAR _med_preco =
+			    CALCULATE(
+			        MEDIAN(fato_anuncios[preco_m2]),
+			        ALLEXCEPT(fato_anuncios, fato_anuncios[bairro]),
+			        fato_anuncios[tipo_negocio] = EARLIER(fato_anuncios[tipo_negocio])
+			    )
+			
+			VAR _med_area =
+			    CALCULATE(
+			        MEDIAN(fato_anuncios[area_m2]),
+			        FILTER(
+			            fato_anuncios,
+			            fato_anuncios[area_m2] <= 600
+			        ),
+			        ALLEXCEPT(fato_anuncios, fato_anuncios[bairro])
+			    )
+			
+			VAR _med_cond =
+			    CALCULATE(
+			        MEDIAN(fato_anuncios[condominio]),
+			        ALLEXCEPT(fato_anuncios, fato_anuncios[bairro])
+			    )
+			
+			-- Yield: recalcula aqui pois medida não funciona em coluna calculada
+			VAR _aluguel_bairro =
+			    CALCULATE(
+			        MEDIAN(fato_anuncios[preco_m2]),
+			        fato_anuncios[tipo_negocio] = "Aluguel",
+			        ALLEXCEPT(fato_anuncios, fato_anuncios[bairro])
+			    )
+			VAR _venda_bairro =
+			    CALCULATE(
+			        MEDIAN(fato_anuncios[preco_m2]),
+			        fato_anuncios[tipo_negocio] = "Venda",
+			        ALLEXCEPT(fato_anuncios, fato_anuncios[bairro])
+			    )
+			VAR _qtd_aluguel =
+			    CALCULATE(
+			        COUNTROWS(fato_anuncios),
+			        fato_anuncios[tipo_negocio]= "Aluguel",
+			        ALLEXCEPT(fato_anuncios, fato_anuncios[bairro])
+			    )
+			VAR _qtd_venda =
+			    CALCULATE(
+			        COUNTROWS(fato_anuncios),
+			        fato_anuncios[tipo_negocio] = "Venda",
+			        ALLEXCEPT(fato_anuncios, fato_anuncios[bairro])
+			    )
+			VAR _yield =
+			    IF(
+			        _qtd_aluguel >= 10 && _qtd_venda >= 10,
+			        DIVIDE(_aluguel_bairro, _venda_bairro, BLANK()),
+			        BLANK()
+			    )
+			
+			-- Pontuações
+			VAR _pts_preco =
+			    SWITCH(TRUE(),
+			        _preco_m2 < _med_preco * 0.80, 35,
+			        _preco_m2 < _med_preco * 0.90, 25,
+			        _preco_m2 < _med_preco * 1.00, 15,
+			        0
+			    )
+			
+			VAR _pts_area =
+			    SWITCH(TRUE(),
+			        _area > _med_area * 1.20, 25,
+			        _area > _med_area * 1.10, 17,
+			        _area > _med_area * 1.00, 10,
+			        0
+			    )
+			
+			VAR _pts_cond =
+			    SWITCH(TRUE(),
+			        ISBLANK(_cond),            0,
+			        _cond < _med_cond * 0.70, 15,
+			        _cond < _med_cond * 0.90, 10,
+			        _cond < _med_cond * 1.00,  5,
+			        0
+			    )
+			
+			VAR _pts_yield =
+			    SWITCH(TRUE(),
+			        ISBLANK(_yield),  0,
+			        _yield > 0.008,  25,
+			        _yield > 0.007,  18,
+			        _yield > 0.006,  10,
+			        0
+			    )
+			
+			RETURN
+			    _pts_preco + _pts_area + _pts_cond + _pts_yield
+		formatString: 0
+		lineageTag: c5fc57b0-1f38-477c-b346-771f28f6adfe
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column Faixa_Score =
+			
+			SWITCH(
+			    TRUE(),
+			    fato_anuncios[Score_Oportunidade] >= 70, "🟢 Premium",
+			    fato_anuncios[Score_Oportunidade] >= 50, "🟡 Bom",
+			    fato_anuncios[Score_Oportunidade] >= 30, "🟠 Regular",
+			    "🔴 Baixo"
+			)
+		lineageTag: 255b11ad-eb3f-424c-a0b4-0c500d8383f0
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ordem_Faixa =
+			
+			SWITCH(
+			    fato_anuncios[Faixa_Score],
+			    "🟢 Premium", 1,
+			    "🟡 Bom",     2,
+			    "🟠 Regular", 3,
+			    "🔴 Baixo",   4
+			)
+		formatString: 0
+		lineageTag: 374170d6-f0d9-4541-a1c1-52b7c5bd309d
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column Faixa_Preco =
+			
+			SWITCH(
+			    TRUE(),
+			    -- ALUGUEL
+			    fato_anuncios[tipo_negocio] = "Aluguel" && fato_anuncios[preco_atual] < 2000,                                                "Até R$ 2k",
+			    fato_anuncios[tipo_negocio] = "Aluguel" && fato_anuncios[preco_atual] < 4000,                                                "R$ 2k – 4k",
+			    fato_anuncios[tipo_negocio] = "Aluguel" && fato_anuncios[preco_atual] < 7000,                                                "R$ 4k – 7k",
+			    fato_anuncios[tipo_negocio] = "Aluguel" && fato_anuncios[preco_atual] < 12000,                                               "R$ 7k – 12k",
+			    fato_anuncios[tipo_negocio] = "Aluguel",                                                                                     "Acima R$ 12k",
+			
+			    -- VENDA
+			    fato_anuncios[tipo_negocio] = "Venda" && fato_anuncios[preco_atual] < 300000,                                                "Até R$ 300k",
+			    fato_anuncios[tipo_negocio] = "Venda" && fato_anuncios[preco_atual] < 600000,                                                "R$ 300k – 600k",
+			    fato_anuncios[tipo_negocio] = "Venda" && fato_anuncios[preco_atual] < 1000000,                                               "R$ 600k – 1M",
+			    fato_anuncios[tipo_negocio] = "Venda" && fato_anuncios[preco_atual] < 2000000,                                               "R$ 1M – 2M",
+			    fato_anuncios[tipo_negocio] = "Venda",                                                                                       "Acima R$ 2M",
+			
+			    "Indefinido"
+			)
+		lineageTag: ca497168-026d-4704-97eb-6d645da38950
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fato_anuncios = m
+		mode: import
+		source =
+				let
+				    Fonte = fato_imoveis,
+				    #"Linhas em Branco Removidas" = Table.SelectRows(Fonte, each not List.IsEmpty(List.RemoveMatchingItems(Record.FieldValues(_), {"", null}))),
+				    #"Linhas Filtradas" = Table.SelectRows(#"Linhas em Branco Removidas", each ([area_m2] <> null)),
+				    #"Valor Substituído" = Table.ReplaceValue(#"Linhas Filtradas",null,0,Replacer.ReplaceValue,{"garagens"}),
+				    #"Valor Substituído1" = Table.ReplaceValue(#"Valor Substituído",null,0,Replacer.ReplaceValue,{"condominio"}),
+				    #"Duplicatas Removidas" = Table.Distinct(#"Valor Substituído1", {"bairro", "area_m2", "condominio", "preco_atual"}),
+				    #"Linhas Filtradas1" = Table.SelectRows(#"Duplicatas Removidas", each ([bairro] <> "Calabetão" and [bairro] <> "Fazenda Grande 4" and [bairro] <> "Paripe" and [bairro] <> "Pirajá" and [bairro] <> "Plataforma" and [bairro] <> "Saboeiro" and [bairro] <> "Sussuarana" and [bairro] <> "Águas Claras") and ([tipo_imovel] <> "Ponto comercial"))
+				in
+				    #"Linhas Filtradas1"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,3155 @@
+cultureInfo pt-BR
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "dim_localidade": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_localidade"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim localidade": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dim_localidade": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_localidade.id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_localidade",
+			          "ConceptualProperty": "id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "NameType": "Identifier"
+			    },
+			    "dim_localidade.cidade": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_localidade",
+			          "ConceptualProperty": "cidade"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cidade": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_localidade.bairro": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_localidade",
+			          "ConceptualProperty": "bairro"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "bairro": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_tipo_negocio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_tipoNegocio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim tipo negocio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dim_tipoNegocio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_tipo_negocio.tipo_negocio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_tipoNegocio",
+			          "ConceptualProperty": "tipo_negocio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo negocio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tipo_negocio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_tipo_negocio.id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_tipoNegocio",
+			          "ConceptualProperty": "id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "NameType": "Identifier"
+			    },
+			    "dim_calendario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_calendario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim calendario": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dim_calendario": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_calendario.data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_calendario",
+			          "ConceptualProperty": "Data"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "dim_calendario.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_calendario",
+			          "ConceptualProperty": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_calendario.nome_do_mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_calendario",
+			          "ConceptualProperty": "Nome do Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nome do mê": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_calendario.mês_num": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_calendario",
+			          "ConceptualProperty": "Mês Num"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mês num": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mê num": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "mê number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "dim_calendario.ano_mês_num": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_calendario",
+			          "ConceptualProperty": "Ano Mês Num"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano mês num": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ano mê num": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "ano mê number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "dim_calendario.ano_mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_calendario",
+			          "ConceptualProperty": "Ano Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano mê": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_calendario.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_calendario",
+			          "ConceptualProperty": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_calendario.semestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_calendario",
+			          "ConceptualProperty": "Semestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "semestre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_calendario.dia_da_semana": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_calendario",
+			          "ConceptualProperty": "Dia da semana"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia da semana": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_calendario.dia_da_semana_num": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_calendario",
+			          "ConceptualProperty": "Dia da semana num"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia da semana num": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dia da semana number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        }
+			      ]
+			    },
+			    "fato_anuncio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_anuncios"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fato anuncio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fato_anuncios": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fato_anuncio.id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_anuncios",
+			          "ConceptualProperty": "id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "NameType": "Identifier"
+			    },
+			    "fato_anuncio.titulo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_anuncios",
+			          "ConceptualProperty": "titulo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "titulo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Descrição": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "fato_anuncio.url": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_anuncios",
+			          "ConceptualProperty": "url"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "url": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "website": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "site": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "web address": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.571
+			          }
+			        }
+			      ]
+			    },
+			    "fato_anuncio.tipo_negocio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_anuncios",
+			          "ConceptualProperty": "tipo_negocio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "tipo negocio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tipo_negocio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fato_anuncio.tipo_imovel": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_anuncios",
+			          "ConceptualProperty": "tipo_imovel"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "tipo imovel": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tipo_imovel": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fato_anuncio.bairro": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_anuncios",
+			          "ConceptualProperty": "bairro"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "bairro": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_anuncio.cidade": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_anuncios",
+			          "ConceptualProperty": "cidade"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cidade": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_anuncio.estado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_anuncios",
+			          "ConceptualProperty": "estado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "estado": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_anuncio.area_m_2": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_anuncios",
+			          "ConceptualProperty": "area_m2"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "area m 2": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "area_m2": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "m 2": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "region m 2": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "locale m 2": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "locality m 2": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "neighbourhood m 2": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "district m 2": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "continent m 2": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "field m 2": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "neighborhood m 2": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "section m 2": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "space m 2": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "Área_m2": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "fato_anuncio.quarto": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_anuncios",
+			          "ConceptualProperty": "quartos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "quarto": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Quartos": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "fato_anuncio.banheiro": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_anuncios",
+			          "ConceptualProperty": "banheiros"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "banheiro": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Banheiros": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "fato_anuncio.garagen": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_anuncios",
+			          "ConceptualProperty": "garagens"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "garagen": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_anuncio.preco_m_2": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_anuncios",
+			          "ConceptualProperty": "preco_m2"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "preco m 2": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "preco_m2": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Preço_m2": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "fato_anuncio.condominio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_anuncios",
+			          "ConceptualProperty": "condominio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "condominio": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_anuncio.iptu": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_anuncios",
+			          "ConceptualProperty": "iptu"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "iptu": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_anuncio.localizacao_mapa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_anuncios",
+			          "ConceptualProperty": "Localizacao_Mapa"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "localizacao mapa": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Localizacao_Mapa": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "place": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Location"
+			    },
+			    "fato_anuncio.url_foto": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_anuncios",
+			          "ConceptualProperty": "url_foto"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "url foto": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "url_foto": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "website foto": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "site foto": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "web address foto": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.471
+			          }
+			        }
+			      ]
+			    },
+			    "medida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "medidas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "medida": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.coluna_1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "medidas",
+			          "ConceptualProperty": "Coluna 1"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "coluna 1": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.preço_médio_m": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "medidas",
+			          "ConceptualProperty": "Preço Médio m²"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "preço médio m²": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.total_anúncios": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "medidas",
+			          "ConceptualProperty": "Total Anúncios"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total anúncios": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate anúncio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall anúncio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "medida.preço_médio_m_relevevante": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "medidas",
+			          "ConceptualProperty": "Preço Médio m² relevevante"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "preço médio m² relevevante": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_tipo_imovel": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_tipoImovel"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim tipo imovel": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dim_tipoImovel": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_tipo_imovel.id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_tipoImovel",
+			          "ConceptualProperty": "id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "NameType": "Identifier"
+			    },
+			    "dim_tipo_imovel.tipo_imovel": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_tipoImovel",
+			          "ConceptualProperty": "tipo_imovel"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo imovel": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tipo_imovel": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Tipo_Imóvel": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.ticket_médio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "medidas",
+			          "ConceptualProperty": "Ticket Médio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ticket médio": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.yield_mensal_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "medidas",
+			          "ConceptualProperty": "Yield Mensal %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "yield mensal %": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yield mensal percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "yield mensal pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "medida.custo_fixo_mensal": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "medidas",
+			          "ConceptualProperty": "Custo Fixo Mensal"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "custo fixo mensal": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.analise_de_custos_cascata": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "medidas",
+			          "ConceptualProperty": "Analise de Custos Cascata"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "analise de custos cascata": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_cascata": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Cascata"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim cascata": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Dim_Cascata": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_cascata.ordem": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Cascata",
+			          "ConceptualProperty": "Ordem"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ordem": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_cascata.categoria_custo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Cascata",
+			          "ConceptualProperty": "Categoria Custos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "categoria custo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "dim_cascata_has_categoria_custo": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Cascata"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_cascata": {
+			          "Target": {
+			            "Entity": "dim_cascata"
+			          }
+			        },
+			        "dim_cascata.categoria_custo": {
+			          "Target": {
+			            "Entity": "dim_cascata.categoria_custo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_cascata"
+			            },
+			            "Object": {
+			              "Role": "dim_cascata.categoria_custo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_cascatas_have_categoria_custos"
+			        }
+			      ]
+			    },
+			    "dim_cascata_has_ordem": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Cascata"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_cascata": {
+			          "Target": {
+			            "Entity": "dim_cascata"
+			          }
+			        },
+			        "dim_cascata.ordem": {
+			          "Target": {
+			            "Entity": "dim_cascata.ordem"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_cascata"
+			            },
+			            "Object": {
+			              "Role": "dim_cascata.ordem"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_cascatas_have_ordems"
+			        }
+			      ]
+			    },
+			    "fato_anuncio_has_medida_analise_de_custos_cascata": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_anuncios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_anuncio": {
+			          "Target": {
+			            "Entity": "fato_anuncio"
+			          }
+			        },
+			        "medida.analise_de_custos_cascata": {
+			          "Target": {
+			            "Entity": "medida.analise_de_custos_cascata"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_anuncio"
+			            },
+			            "Object": {
+			              "Role": "medida.analise_de_custos_cascata"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_anuncios_have_analise_de_custos_cascata"
+			        }
+			      ]
+			    },
+			    "dim_cascata_has_medida_analise_de_custos_cascata": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Cascata"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_cascata": {
+			          "Target": {
+			            "Entity": "dim_cascata"
+			          }
+			        },
+			        "medida.analise_de_custos_cascata": {
+			          "Target": {
+			            "Entity": "medida.analise_de_custos_cascata"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_cascata"
+			            },
+			            "Object": {
+			              "Role": "medida.analise_de_custos_cascata"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_cascatas_have_analise_de_custos_cascata"
+			        }
+			      ]
+			    },
+			    "fato_anuncio_has_medida_custo_fixo_mensal": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_anuncios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_anuncio": {
+			          "Target": {
+			            "Entity": "fato_anuncio"
+			          }
+			        },
+			        "medida.custo_fixo_mensal": {
+			          "Target": {
+			            "Entity": "medida.custo_fixo_mensal"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_anuncio"
+			            },
+			            "Object": {
+			              "Role": "medida.custo_fixo_mensal"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_anuncios_have_custo_fixo_mensal"
+			        }
+			      ]
+			    },
+			    "fato_anuncio_has_medida_yield_mensal_": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_anuncios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_anuncio": {
+			          "Target": {
+			            "Entity": "fato_anuncio"
+			          }
+			        },
+			        "medida.yield_mensal_": {
+			          "Target": {
+			            "Entity": "medida.yield_mensal_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_anuncio"
+			            },
+			            "Object": {
+			              "Role": "medida.yield_mensal_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_anuncios_have_yield_mensal_"
+			        }
+			      ]
+			    },
+			    "fato_anuncio_has_medida_ticket_médio": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_anuncios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_anuncio": {
+			          "Target": {
+			            "Entity": "fato_anuncio"
+			          }
+			        },
+			        "medida.ticket_médio": {
+			          "Target": {
+			            "Entity": "medida.ticket_médio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_anuncio"
+			            },
+			            "Object": {
+			              "Role": "medida.ticket_médio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_anuncios_have_ticket_médio"
+			        }
+			      ]
+			    },
+			    "dim_tipo_imovel_has_tipo_imovel": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_tipoImovel"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_tipo_imovel": {
+			          "Target": {
+			            "Entity": "dim_tipo_imovel"
+			          }
+			        },
+			        "dim_tipo_imovel.tipo_imovel": {
+			          "Target": {
+			            "Entity": "dim_tipo_imovel.tipo_imovel"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_tipo_imovel"
+			            },
+			            "Object": {
+			              "Role": "dim_tipo_imovel.tipo_imovel"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_tipo_imovels_have_tipo_imovels"
+			        }
+			      ]
+			    },
+			    "dim_tipo_imovel_has_id": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_tipoImovel"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_tipo_imovel": {
+			          "Target": {
+			            "Entity": "dim_tipo_imovel"
+			          }
+			        },
+			        "dim_tipo_imovel.id": {
+			          "Target": {
+			            "Entity": "dim_tipo_imovel.id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_tipo_imovel"
+			            },
+			            "Object": {
+			              "Role": "dim_tipo_imovel.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_tipo_imovels_have_ids"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "dim_tipo_imovel"
+			            },
+			            "Name": {
+			              "Role": "dim_tipo_imovel.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ids_are_names_IDs_of_dim_tipo_imovels"
+			        }
+			      ]
+			    },
+			    "fato_anuncio_has_medida_preço_médio_m_relevevante": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_anuncios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_anuncio": {
+			          "Target": {
+			            "Entity": "fato_anuncio"
+			          }
+			        },
+			        "medida.preço_médio_m_relevevante": {
+			          "Target": {
+			            "Entity": "medida.preço_médio_m_relevevante"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_anuncio"
+			            },
+			            "Object": {
+			              "Role": "medida.preço_médio_m_relevevante"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_anuncios_have_preço_médio_m_relevevante"
+			        }
+			      ]
+			    },
+			    "fato_anuncio_has_medida_total_anúncios": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_anuncios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_anuncio": {
+			          "Target": {
+			            "Entity": "fato_anuncio"
+			          }
+			        },
+			        "medida.total_anúncios": {
+			          "Target": {
+			            "Entity": "medida.total_anúncios"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_anuncio"
+			            },
+			            "Object": {
+			              "Role": "medida.total_anúncios"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_anuncios_have_total_anúncios"
+			        }
+			      ]
+			    },
+			    "fato_anuncio_has_medida_preço_médio_m": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_anuncios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_anuncio": {
+			          "Target": {
+			            "Entity": "fato_anuncio"
+			          }
+			        },
+			        "medida.preço_médio_m": {
+			          "Target": {
+			            "Entity": "medida.preço_médio_m"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_anuncio"
+			            },
+			            "Object": {
+			              "Role": "medida.preço_médio_m"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_anuncios_have_preço_médio_m"
+			        }
+			      ]
+			    },
+			    "fato_anuncio_has_url_foto": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_anuncios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_anuncio": {
+			          "Target": {
+			            "Entity": "fato_anuncio"
+			          }
+			        },
+			        "fato_anuncio.url_foto": {
+			          "Target": {
+			            "Entity": "fato_anuncio.url_foto"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_anuncio"
+			            },
+			            "Object": {
+			              "Role": "fato_anuncio.url_foto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_anuncios_have_url_fotos"
+			        }
+			      ]
+			    },
+			    "fato_anuncio_has_localizacao_mapa": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_anuncios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_anuncio": {
+			          "Target": {
+			            "Entity": "fato_anuncio"
+			          }
+			        },
+			        "fato_anuncio.localizacao_mapa": {
+			          "Target": {
+			            "Entity": "fato_anuncio.localizacao_mapa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_anuncio"
+			            },
+			            "Object": {
+			              "Role": "fato_anuncio.localizacao_mapa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_anuncios_have_localizacao_mapas"
+			        }
+			      ]
+			    },
+			    "fato_anuncio_has_data_coleta": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_anuncios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_anuncio": {
+			          "Target": {
+			            "Entity": "fato_anuncio"
+			          }
+			        },
+			        "fato_anuncio.data_coleta": {
+			          "Target": {
+			            "Entity": "fato_anuncio.data_coleta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_anuncio"
+			            },
+			            "Object": {
+			              "Role": "fato_anuncio.data_coleta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_anuncios_have_data_coletas"
+			        }
+			      ]
+			    },
+			    "fato_anuncio_has_iptu": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_anuncios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_anuncio": {
+			          "Target": {
+			            "Entity": "fato_anuncio"
+			          }
+			        },
+			        "fato_anuncio.iptu": {
+			          "Target": {
+			            "Entity": "fato_anuncio.iptu"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_anuncio"
+			            },
+			            "Object": {
+			              "Role": "fato_anuncio.iptu"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_anuncios_have_iptus"
+			        }
+			      ]
+			    },
+			    "fato_anuncio_has_condominio": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_anuncios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_anuncio": {
+			          "Target": {
+			            "Entity": "fato_anuncio"
+			          }
+			        },
+			        "fato_anuncio.condominio": {
+			          "Target": {
+			            "Entity": "fato_anuncio.condominio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_anuncio"
+			            },
+			            "Object": {
+			              "Role": "fato_anuncio.condominio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_anuncios_have_condominios"
+			        }
+			      ]
+			    },
+			    "fato_anuncio_has_preco_m_2": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_anuncios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_anuncio": {
+			          "Target": {
+			            "Entity": "fato_anuncio"
+			          }
+			        },
+			        "fato_anuncio.preco_m_2": {
+			          "Target": {
+			            "Entity": "fato_anuncio.preco_m_2"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_anuncio"
+			            },
+			            "Object": {
+			              "Role": "fato_anuncio.preco_m_2"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_anuncios_have_preco_m_2"
+			        }
+			      ]
+			    },
+			    "fato_anuncio_has_preco": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_anuncios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_anuncio": {
+			          "Target": {
+			            "Entity": "fato_anuncio"
+			          }
+			        },
+			        "fato_anuncio.preco": {
+			          "Target": {
+			            "Entity": "fato_anuncio.preco"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_anuncio"
+			            },
+			            "Object": {
+			              "Role": "fato_anuncio.preco"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_anuncios_have_precos"
+			        }
+			      ]
+			    },
+			    "fato_anuncio_has_garagen": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_anuncios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_anuncio": {
+			          "Target": {
+			            "Entity": "fato_anuncio"
+			          }
+			        },
+			        "fato_anuncio.garagen": {
+			          "Target": {
+			            "Entity": "fato_anuncio.garagen"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_anuncio"
+			            },
+			            "Object": {
+			              "Role": "fato_anuncio.garagen"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_anuncios_have_garagens"
+			        }
+			      ]
+			    },
+			    "fato_anuncio_has_banheiro": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_anuncios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_anuncio": {
+			          "Target": {
+			            "Entity": "fato_anuncio"
+			          }
+			        },
+			        "fato_anuncio.banheiro": {
+			          "Target": {
+			            "Entity": "fato_anuncio.banheiro"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_anuncio"
+			            },
+			            "Object": {
+			              "Role": "fato_anuncio.banheiro"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_anuncios_have_banheiros"
+			        }
+			      ]
+			    },
+			    "fato_anuncio_has_quarto": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_anuncios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_anuncio": {
+			          "Target": {
+			            "Entity": "fato_anuncio"
+			          }
+			        },
+			        "fato_anuncio.quarto": {
+			          "Target": {
+			            "Entity": "fato_anuncio.quarto"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_anuncio"
+			            },
+			            "Object": {
+			              "Role": "fato_anuncio.quarto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_anuncios_have_quartos"
+			        }
+			      ]
+			    },
+			    "fato_anuncio_has_area_m_2": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_anuncios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_anuncio": {
+			          "Target": {
+			            "Entity": "fato_anuncio"
+			          }
+			        },
+			        "fato_anuncio.area_m_2": {
+			          "Target": {
+			            "Entity": "fato_anuncio.area_m_2"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_anuncio"
+			            },
+			            "Object": {
+			              "Role": "fato_anuncio.area_m_2"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_anuncios_have_area_m_2"
+			        }
+			      ]
+			    },
+			    "fato_anuncio_has_estado": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_anuncios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_anuncio": {
+			          "Target": {
+			            "Entity": "fato_anuncio"
+			          }
+			        },
+			        "fato_anuncio.estado": {
+			          "Target": {
+			            "Entity": "fato_anuncio.estado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_anuncio"
+			            },
+			            "Object": {
+			              "Role": "fato_anuncio.estado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_anuncios_have_estado"
+			        }
+			      ]
+			    },
+			    "fato_anuncio_has_cidade": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_anuncios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_anuncio": {
+			          "Target": {
+			            "Entity": "fato_anuncio"
+			          }
+			        },
+			        "fato_anuncio.cidade": {
+			          "Target": {
+			            "Entity": "fato_anuncio.cidade"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_anuncio"
+			            },
+			            "Object": {
+			              "Role": "fato_anuncio.cidade"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_anuncios_have_cidades"
+			        }
+			      ]
+			    },
+			    "fato_anuncio_has_url": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_anuncios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_anuncio": {
+			          "Target": {
+			            "Entity": "fato_anuncio"
+			          }
+			        },
+			        "fato_anuncio.url": {
+			          "Target": {
+			            "Entity": "fato_anuncio.url"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_anuncio"
+			            },
+			            "Object": {
+			              "Role": "fato_anuncio.url"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_anuncios_have_urls"
+			        }
+			      ]
+			    },
+			    "fato_anuncio_has_titulo": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_anuncios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_anuncio": {
+			          "Target": {
+			            "Entity": "fato_anuncio"
+			          }
+			        },
+			        "fato_anuncio.titulo": {
+			          "Target": {
+			            "Entity": "fato_anuncio.titulo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_anuncio"
+			            },
+			            "Object": {
+			              "Role": "fato_anuncio.titulo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_anuncios_have_titulos"
+			        }
+			      ]
+			    },
+			    "fato_anuncio_has_id": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_anuncios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_anuncio": {
+			          "Target": {
+			            "Entity": "fato_anuncio"
+			          }
+			        },
+			        "fato_anuncio.id": {
+			          "Target": {
+			            "Entity": "fato_anuncio.id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_anuncio"
+			            },
+			            "Object": {
+			              "Role": "fato_anuncio.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_anuncios_have_ids"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "fato_anuncio"
+			            },
+			            "Name": {
+			              "Role": "fato_anuncio.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ids_are_names_IDs_of_fato_anuncios"
+			        }
+			      ]
+			    },
+			    "dim_calendario_has_dia_da_semana_num": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_calendario": {
+			          "Target": {
+			            "Entity": "dim_calendario"
+			          }
+			        },
+			        "dim_calendario.dia_da_semana_num": {
+			          "Target": {
+			            "Entity": "dim_calendario.dia_da_semana_num"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendario"
+			            },
+			            "Object": {
+			              "Role": "dim_calendario.dia_da_semana_num"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_calendarios_have_dia_da_semana_nums"
+			        }
+			      ]
+			    },
+			    "dim_calendario_has_dia_da_semana": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_calendario": {
+			          "Target": {
+			            "Entity": "dim_calendario"
+			          }
+			        },
+			        "dim_calendario.dia_da_semana": {
+			          "Target": {
+			            "Entity": "dim_calendario.dia_da_semana"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendario"
+			            },
+			            "Object": {
+			              "Role": "dim_calendario.dia_da_semana"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_calendarios_have_dia_da_semanas"
+			        }
+			      ]
+			    },
+			    "dim_calendario_has_semestre": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_calendario": {
+			          "Target": {
+			            "Entity": "dim_calendario"
+			          }
+			        },
+			        "dim_calendario.semestre": {
+			          "Target": {
+			            "Entity": "dim_calendario.semestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendario"
+			            },
+			            "Object": {
+			              "Role": "dim_calendario.semestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_calendarios_have_semestres"
+			        }
+			      ]
+			    },
+			    "dim_calendario_has_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_calendario": {
+			          "Target": {
+			            "Entity": "dim_calendario"
+			          }
+			        },
+			        "dim_calendario.trimestre": {
+			          "Target": {
+			            "Entity": "dim_calendario.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendario"
+			            },
+			            "Object": {
+			              "Role": "dim_calendario.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_calendarios_have_trimestres"
+			        }
+			      ]
+			    },
+			    "dim_calendario_has_ano_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_calendario": {
+			          "Target": {
+			            "Entity": "dim_calendario"
+			          }
+			        },
+			        "dim_calendario.ano_mê": {
+			          "Target": {
+			            "Entity": "dim_calendario.ano_mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendario"
+			            },
+			            "Object": {
+			              "Role": "dim_calendario.ano_mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_calendarios_have_ano_mê"
+			        }
+			      ]
+			    },
+			    "dim_calendario_has_ano_mês_num": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_calendario": {
+			          "Target": {
+			            "Entity": "dim_calendario"
+			          }
+			        },
+			        "dim_calendario.ano_mês_num": {
+			          "Target": {
+			            "Entity": "dim_calendario.ano_mês_num"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendario"
+			            },
+			            "Object": {
+			              "Role": "dim_calendario.ano_mês_num"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_calendarios_have_ano_mês_nums"
+			        }
+			      ]
+			    },
+			    "dim_calendario_has_mês_num": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_calendario": {
+			          "Target": {
+			            "Entity": "dim_calendario"
+			          }
+			        },
+			        "dim_calendario.mês_num": {
+			          "Target": {
+			            "Entity": "dim_calendario.mês_num"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendario"
+			            },
+			            "Object": {
+			              "Role": "dim_calendario.mês_num"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_calendarios_have_mês_nums"
+			        }
+			      ]
+			    },
+			    "dim_calendario_has_nome_do_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_calendario": {
+			          "Target": {
+			            "Entity": "dim_calendario"
+			          }
+			        },
+			        "dim_calendario.nome_do_mê": {
+			          "Target": {
+			            "Entity": "dim_calendario.nome_do_mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendario"
+			            },
+			            "Object": {
+			              "Role": "dim_calendario.nome_do_mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_calendarios_have_nome_do_mê"
+			        }
+			      ]
+			    },
+			    "dim_calendario_has_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_calendario": {
+			          "Target": {
+			            "Entity": "dim_calendario"
+			          }
+			        },
+			        "dim_calendario.ano": {
+			          "Target": {
+			            "Entity": "dim_calendario.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendario"
+			            },
+			            "Object": {
+			              "Role": "dim_calendario.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_calendarios_have_anos"
+			        }
+			      ]
+			    },
+			    "dim_calendario_has_data": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_calendario": {
+			          "Target": {
+			            "Entity": "dim_calendario"
+			          }
+			        },
+			        "dim_calendario.data": {
+			          "Target": {
+			            "Entity": "dim_calendario.data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendario"
+			            },
+			            "Object": {
+			              "Role": "dim_calendario.data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_calendarios_have_data"
+			        }
+			      ]
+			    },
+			    "dim_tipo_negocio_has_id": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_tipoNegocio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_tipo_negocio": {
+			          "Target": {
+			            "Entity": "dim_tipo_negocio"
+			          }
+			        },
+			        "dim_tipo_negocio.id": {
+			          "Target": {
+			            "Entity": "dim_tipo_negocio.id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_tipo_negocio"
+			            },
+			            "Object": {
+			              "Role": "dim_tipo_negocio.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_tipo_negocios_have_ids"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "dim_tipo_negocio"
+			            },
+			            "Name": {
+			              "Role": "dim_tipo_negocio.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ids_are_names_IDs_of_dim_tipo_negocios"
+			        }
+			      ]
+			    },
+			    "dim_tipo_negocio_has_tipo_negocio": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_tipoNegocio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_tipo_negocio": {
+			          "Target": {
+			            "Entity": "dim_tipo_negocio"
+			          }
+			        },
+			        "dim_tipo_negocio.tipo_negocio": {
+			          "Target": {
+			            "Entity": "dim_tipo_negocio.tipo_negocio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_tipo_negocio"
+			            },
+			            "Object": {
+			              "Role": "dim_tipo_negocio.tipo_negocio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_tipo_negocios_have_tipo_negocios"
+			        }
+			      ]
+			    },
+			    "dim_localidade_has_bairro": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_localidade"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_localidade": {
+			          "Target": {
+			            "Entity": "dim_localidade"
+			          }
+			        },
+			        "dim_localidade.bairro": {
+			          "Target": {
+			            "Entity": "dim_localidade.bairro"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_localidade"
+			            },
+			            "Object": {
+			              "Role": "dim_localidade.bairro"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_localidades_have_bairros"
+			        }
+			      ]
+			    },
+			    "dim_localidade_has_cidade": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_localidade"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_localidade": {
+			          "Target": {
+			            "Entity": "dim_localidade"
+			          }
+			        },
+			        "dim_localidade.cidade": {
+			          "Target": {
+			            "Entity": "dim_localidade.cidade"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_localidade"
+			            },
+			            "Object": {
+			              "Role": "dim_localidade.cidade"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_localidades_have_cidades"
+			        }
+			      ]
+			    },
+			    "dim_localidade_has_id": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_localidade"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_localidade": {
+			          "Target": {
+			            "Entity": "dim_localidade"
+			          }
+			        },
+			        "dim_localidade.id": {
+			          "Target": {
+			            "Entity": "dim_localidade.id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_localidade"
+			            },
+			            "Object": {
+			              "Role": "dim_localidade.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_localidades_have_ids"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "dim_localidade"
+			            },
+			            "Name": {
+			              "Role": "dim_localidade.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ids_are_names_IDs_of_dim_localidades"
+			        }
+			      ]
+			    },
+			    "fato_anuncio_in_localizacao_mapa": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_anuncios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_anuncio": {
+			          "Target": {
+			            "Entity": "fato_anuncio"
+			          }
+			        },
+			        "fato_anuncio.localizacao_mapa": {
+			          "Target": {
+			            "Entity": "fato_anuncio.localizacao_mapa"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "fato_anuncio.localizacao_mapa"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "fato_anuncio"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "fato_anuncio.localizacao_mapa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_anuncios_are_in_localizacao_mapas"
+			        }
+			      ]
+			    },
+			    "fato_anuncio_has_dim_localidade": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_anuncios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_anuncio": {
+			          "Target": {
+			            "Entity": "fato_anuncio"
+			          }
+			        },
+			        "dim_localidade": {
+			          "Target": {
+			            "Entity": "dim_localidade"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_anuncio"
+			            },
+			            "Object": {
+			              "Role": "dim_localidade"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_anuncios_have_dim_localidades"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_localidade"
+			            },
+			            "Object": {
+			              "Role": "fato_anuncio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_localidades_have_fato_anuncios"
+			        }
+			      ]
+			    },
+			    "fato_anuncio_has_dim_tipo_negocio": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_anuncios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_anuncio": {
+			          "Target": {
+			            "Entity": "fato_anuncio"
+			          }
+			        },
+			        "dim_tipo_negocio": {
+			          "Target": {
+			            "Entity": "dim_tipo_negocio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_anuncio"
+			            },
+			            "Object": {
+			              "Role": "dim_tipo_negocio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_anuncios_have_dim_tipo_negocios"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_tipo_negocio"
+			            },
+			            "Object": {
+			              "Role": "fato_anuncio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_tipo_negocios_have_fato_anuncios"
+			        }
+			      ]
+			    },
+			    "fato_anuncio_has_dim_calendario": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_anuncios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_anuncio": {
+			          "Target": {
+			            "Entity": "fato_anuncio"
+			          }
+			        },
+			        "dim_calendario": {
+			          "Target": {
+			            "Entity": "dim_calendario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_anuncio"
+			            },
+			            "Object": {
+			              "Role": "dim_calendario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_anuncios_have_dim_calendarios"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendario"
+			            },
+			            "Object": {
+			              "Role": "fato_anuncio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_calendarios_have_fato_anuncios"
+			        }
+			      ]
+			    },
+			    "fato_anuncio_has_dim_tipo_imovel": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_anuncios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_anuncio": {
+			          "Target": {
+			            "Entity": "fato_anuncio"
+			          }
+			        },
+			        "dim_tipo_imovel": {
+			          "Target": {
+			            "Entity": "dim_tipo_imovel"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_anuncio"
+			            },
+			            "Object": {
+			              "Role": "dim_tipo_imovel"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_anuncios_have_dim_tipo_imovels"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_tipo_imovel"
+			            },
+			            "Object": {
+			              "Role": "fato_anuncio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_tipo_imovels_have_fato_anuncios"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

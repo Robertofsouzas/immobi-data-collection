@@ -1,0 +1,314 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "864a9aea47433c2c4a87",
+  "position": {
+    "x": 29.625935162094763,
+    "y": 209.17705735660846,
+    "z": 4,
+    "height": 250.47381546134662,
+    "width": 561.99501246882789,
+    "tabOrder": 1
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fato_anuncios"
+                    }
+                  },
+                  "Property": "bairro"
+                }
+              },
+              "queryRef": "fato_anuncios.bairro",
+              "nativeQueryRef": "bairro"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fato_anuncios"
+                    }
+                  },
+                  "Property": "tipo_imovel"
+                }
+              },
+              "queryRef": "fato_anuncios.tipo_imovel",
+              "nativeQueryRef": "tipo_imovel"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fato_anuncios"
+                    }
+                  },
+                  "Property": "area_m2"
+                }
+              },
+              "queryRef": "Sum(fato_anuncios.area_m2)",
+              "nativeQueryRef": "area_m2"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fato_anuncios"
+                    }
+                  },
+                  "Property": "preco_atual"
+                }
+              },
+              "queryRef": "Sum(fato_anuncios.preco_atual)",
+              "nativeQueryRef": "preco_atual"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fato_anuncios"
+                    }
+                  },
+                  "Property": "preco_m2"
+                }
+              },
+              "queryRef": "Sum(fato_anuncios.preco_m2)",
+              "nativeQueryRef": "preco_m2"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fato_anuncios"
+                    }
+                  },
+                  "Property": "Score_Oportunidade"
+                }
+              },
+              "queryRef": "Sum(fato_anuncios.Score_Oportunidade)",
+              "nativeQueryRef": "Score_Oportunidade"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "medidas"
+                    }
+                  },
+                  "Property": "Total Anúncios"
+                }
+              },
+              "queryRef": "medidas.Total Anúncios",
+              "nativeQueryRef": "Total Anúncios"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "fato_anuncios"
+                  }
+                },
+                "Property": "Score_Oportunidade"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "f0beab8957607066169a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fato_anuncios"
+              }
+            },
+            "Property": "bairro"
+          }
+        },
+        "type": "TopN",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "subquery",
+              "Expression": {
+                "Subquery": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "f",
+                        "Entity": "fato_anuncios",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "f"
+                            }
+                          },
+                          "Property": "bairro"
+                        },
+                        "Name": "field"
+                      }
+                    ],
+                    "OrderBy": [
+                      {
+                        "Direction": 2,
+                        "Expression": {
+                          "Aggregation": {
+                            "Expression": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "f"
+                                  }
+                                },
+                                "Property": "id"
+                              }
+                            },
+                            "Function": 2
+                          }
+                        }
+                      }
+                    ],
+                    "Top": 10
+                  }
+                }
+              },
+              "Type": 2
+            },
+            {
+              "Name": "f",
+              "Entity": "fato_anuncios",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "f"
+                          }
+                        },
+                        "Property": "bairro"
+                      }
+                    }
+                  ],
+                  "Table": {
+                    "SourceRef": {
+                      "Source": "subquery"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "a8457d5723b0a2559308",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fato_anuncios"
+              }
+            },
+            "Property": "tipo_imovel"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "58b914b35432ce3489e2",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fato_anuncios"
+              }
+            },
+            "Property": "area_m2"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "97fcab0aec5806dd20e4",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fato_anuncios"
+              }
+            },
+            "Property": "preco_atual"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "522ceea3533ac4a4a0cc",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fato_anuncios"
+              }
+            },
+            "Property": "preco_m2"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "51585173093d50775e0a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fato_anuncios"
+              }
+            },
+            "Property": "Score_Oportunidade"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}

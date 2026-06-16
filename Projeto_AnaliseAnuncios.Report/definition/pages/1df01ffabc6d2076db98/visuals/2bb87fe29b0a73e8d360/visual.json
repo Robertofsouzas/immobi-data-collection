@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "2bb87fe29b0a73e8d360",
+  "position": {
+    "x": 580.84788029925187,
+    "y": 19.75062344139651,
+    "z": 12,
+    "height": 68.229426433915208,
+    "width": 175.96009975062344,
+    "tabOrder": 9
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fato_anuncios"
+                    }
+                  },
+                  "Property": "tipo_negocio"
+                }
+              },
+              "queryRef": "fato_anuncios.tipo_negocio",
+              "nativeQueryRef": "tipo_negocio",
+              "active": true
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Dropdown'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {}
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

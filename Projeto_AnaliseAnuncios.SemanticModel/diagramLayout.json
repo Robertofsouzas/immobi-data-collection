@@ -1,0 +1,124 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 125.38305001469416,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 733.38305001469394,
+            "y": 44.311786987934568
+          },
+          "nodeIndex": "dim_calendario",
+          "nodeLineageTag": "fa8c04bf-55b4-4790-901b-0f17a0fb03fc",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 50,
+            "y": 108.45219980768834
+          },
+          "nodeIndex": "dim_tipoNegocio",
+          "nodeLineageTag": "5f66f5cd-ae41-4c83-8d06-0f294e8f0040",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 364.2015611931854,
+            "y": 410.31178698793457
+          },
+          "nodeIndex": "fato_anuncios",
+          "nodeLineageTag": "c50fece6-addf-4fb6-a2b5-306b9414d926",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1514.3830500146939,
+            "y": 105.2341359678573
+          },
+          "nodeIndex": "medidas",
+          "nodeLineageTag": "11085052-faf7-4d50-93ab-282e09018d49",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1147.3830500146939,
+            "y": 119.15648494778003
+          },
+          "nodeIndex": "dim_tipoImovel",
+          "nodeLineageTag": "3e39a0d1-6ddb-46e5-8a9a-bc3840b2d30d",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 409.38305001469394,
+            "y": 74.467089028089077
+          },
+          "nodeIndex": "dim_localidade",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1614.3830500146939,
+            "y": 309.61765943774139
+          },
+          "nodeIndex": "Dim_Cascata",
+          "nodeLineageTag": "ddbca8e5-ec90-42fa-88e1-436ea95f5ae2",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1848.3830500146939,
+            "y": 295.77059566264484
+          },
+          "nodeIndex": "medidas_kpi's",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas as tabelas",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas as tabelas",
+  "defaultDiagram": "Todas as tabelas"
+}

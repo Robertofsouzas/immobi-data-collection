@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "f652490a0b52e9055865",
+  "position": {
+    "x": 552.11970074812962,
+    "y": 107.73067331670822,
+    "z": 3,
+    "height": 86.184538653366587,
+    "width": 251.3715710723192
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "medidas_kpi's"
+                    }
+                  },
+                  "Property": "Melhor_Bairro_Score"
+                }
+              },
+              "queryRef": "medidas_kpi's.Melhor_Bairro_Score",
+              "nativeQueryRef": "Melhor_Bairro_Score"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

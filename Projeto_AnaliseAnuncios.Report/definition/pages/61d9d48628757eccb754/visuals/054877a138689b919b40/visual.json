@@ -1,0 +1,153 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "054877a138689b919b40",
+  "position": {
+    "x": 908.44444444444446,
+    "y": 513.77777777777783,
+    "z": 7000,
+    "height": 184,
+    "width": 334.22222222222223,
+    "tabOrder": 7000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fato_anuncios"
+                    }
+                  },
+                  "Property": "quartos"
+                }
+              },
+              "queryRef": "Sum(fato_anuncios.quartos)",
+              "nativeQueryRef": "Quartos",
+              "displayName": "Quartos"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fato_anuncios"
+                    }
+                  },
+                  "Property": "banheiros"
+                }
+              },
+              "queryRef": "Sum(fato_anuncios.banheiros)",
+              "nativeQueryRef": "Banheiros",
+              "displayName": "Banheiros"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fato_anuncios"
+                    }
+                  },
+                  "Property": "area_m2"
+                }
+              },
+              "queryRef": "Sum(fato_anuncios.area_m2)",
+              "nativeQueryRef": "Área_m2",
+              "displayName": "Área_m2"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fato_anuncios"
+                    }
+                  },
+                  "Property": "preco_m2"
+                }
+              },
+              "queryRef": "Sum(fato_anuncios.preco_m2)",
+              "nativeQueryRef": "Preço_m2",
+              "displayName": "Preço_m2"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fato_anuncios"
+                    }
+                  },
+                  "Property": "preco_atual"
+                }
+              },
+              "queryRef": "Sum(fato_anuncios.preco_atual)",
+              "nativeQueryRef": "preco_atual"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {}
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'None'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualTooltip": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "section": {
+              "expr": {
+                "Literal": {
+                  "Value": "'ba4fc90faa0eb63c6ab0'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

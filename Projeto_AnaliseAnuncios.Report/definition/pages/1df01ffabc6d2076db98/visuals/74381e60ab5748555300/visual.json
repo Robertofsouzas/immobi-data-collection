@@ -1,0 +1,55 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "74381e60ab5748555300",
+  "position": {
+    "x": 271.12219451371573,
+    "y": 107.73067331670822,
+    "z": 2,
+    "height": 86.184538653366587,
+    "width": 233.41645885286783
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "medidas_kpi's"
+                    }
+                  },
+                  "Property": "Qtd_Oportunidades_Premium"
+                }
+              },
+              "queryRef": "medidas_kpi's.Qtd_Oportunidades_Premium",
+              "nativeQueryRef": "Qtd_Oportunidades_Premium"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "medidas_kpi's"
+                  }
+                },
+                "Property": "Qtd_Oportunidades_Premium"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

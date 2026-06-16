@@ -1,0 +1,87 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "61d9d48628757eccb754",
+  "displayName": "Overview",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "image": {
+            "image": {
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Anuncios.svg'"
+                  }
+                }
+              },
+              "url": {
+                "expr": {
+                  "ResourcePackageItem": {
+                    "PackageName": "RegisteredResources",
+                    "PackageType": 1,
+                    "ItemName": "Anuncios8423342099030348.svg"
+                  }
+                }
+              },
+              "scaling": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Fill'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "054877a138689b919b40",
+      "target": "2b2e7f011593a38c1c68",
+      "type": "NoFilter"
+    },
+    {
+      "source": "054877a138689b919b40",
+      "target": "aec61135e1c0242a593c",
+      "type": "NoFilter"
+    },
+    {
+      "source": "054877a138689b919b40",
+      "target": "8c7a3423e020a57bdd59",
+      "type": "DataFilter"
+    },
+    {
+      "source": "054877a138689b919b40",
+      "target": "2a19edb4b0991e3897b2",
+      "type": "NoFilter"
+    },
+    {
+      "source": "054877a138689b919b40",
+      "target": "9bd6118048c74400d00a",
+      "type": "NoFilter"
+    },
+    {
+      "source": "054877a138689b919b40",
+      "target": "bca9d5a0e1dd3b97860c",
+      "type": "NoFilter"
+    },
+    {
+      "source": "054877a138689b919b40",
+      "target": "f82b5b9e1036a92300e0",
+      "type": "NoFilter"
+    }
+  ]
+}

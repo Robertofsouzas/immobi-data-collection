@@ -1,0 +1,27 @@
+model Model
+	culture: pt-BR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: pt-BR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["fato_imoveis","dim_localidade","dim_tipoNegocio","dim_calendario","fato_anuncios","medidas","dim_tipoImovel","Dim_Cascata","medidas_kpi's"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table dim_localidade
+ref table dim_tipoNegocio
+ref table dim_calendario
+ref table fato_anuncios
+ref table medidas
+ref table dim_tipoImovel
+ref table Dim_Cascata
+ref table DateTableTemplate_65ebb31d-9a57-49e0-a383-513b94eb0b85
+ref table LocalDateTable_ab121a4e-6e7d-4b4e-a47c-93746e5d3cd7
+ref table 'medidas_kpi''s'
+
+ref cultureInfo pt-BR
+

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "972c143480de8e1024d6",
+  "position": {
+    "x": 39.501246882793019,
+    "y": 107.73067331670822,
+    "z": 1,
+    "height": 86.184538653366587,
+    "width": 205.58603491271819
+  },
+  "visual": {
+    "visualType": "card",
+    "autoSelectVisualType": true,
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "medidas_kpi's"
+                    }
+                  },
+                  "Property": "Score_Medio_Mercado"
+                }
+              },
+              "queryRef": "medidas_kpi's.Score_Medio_Mercado",
+              "nativeQueryRef": "Score_Medio_Mercado"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

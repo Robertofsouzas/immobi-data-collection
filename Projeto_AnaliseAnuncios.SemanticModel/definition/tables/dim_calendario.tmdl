@@ -1,0 +1,139 @@
+table dim_calendario
+	lineageTag: fa8c04bf-55b4-4790-901b-0f17a0fb03fc
+	dataCategory: Time
+
+	column Data
+		dataType: dateTime
+		isKey
+		formatString: Short Date
+		lineageTag: 8bd01a19-43b2-4b41-a1e6-2ce0f95b9862
+		summarizeBy: none
+		sourceColumn: Data
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Ano
+		dataType: double
+		lineageTag: 2273a002-2162-454c-a862-3c2599a4f68a
+		summarizeBy: none
+		sourceColumn: Ano
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Nome do Mês'
+		dataType: string
+		lineageTag: a5d3bc59-7771-4905-a64a-0f5ba86401fd
+		summarizeBy: none
+		sourceColumn: Nome do Mês
+		sortByColumn: 'Mês Num'
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mês Num'
+		dataType: double
+		lineageTag: 85546058-2a52-4b6c-9f5f-8da482b78768
+		summarizeBy: none
+		sourceColumn: Mês Num
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Ano Mês Num'
+		dataType: double
+		lineageTag: 9be8a6dc-574d-4d63-8daa-62b730f19130
+		summarizeBy: none
+		sourceColumn: Ano Mês Num
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Ano Mês'
+		dataType: string
+		lineageTag: db57018b-cb78-48e5-b7b0-affdafa2b721
+		summarizeBy: none
+		sourceColumn: Ano Mês
+
+		annotation SummarizationSetBy = Automatic
+
+	column Trimestre
+		dataType: string
+		lineageTag: 66042eee-c996-4279-b8d0-5bd4b609ecb6
+		summarizeBy: none
+		sourceColumn: Trimestre
+
+		annotation SummarizationSetBy = Automatic
+
+	column Semestre
+		dataType: string
+		lineageTag: a9c61e4f-c314-44de-b047-13833a74a960
+		summarizeBy: none
+		sourceColumn: Semestre
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Dia da semana'
+		dataType: string
+		lineageTag: 6f6fcd13-fa39-4f8c-88af-69fb389478a4
+		summarizeBy: none
+		sourceColumn: Dia da semana
+		sortByColumn: 'Dia da semana num'
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Dia da semana num'
+		dataType: double
+		lineageTag: 6bffaacf-a01e-481f-bf02-c93a538a691b
+		summarizeBy: none
+		sourceColumn: Dia da semana num
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition dim_calendario = m
+		mode: import
+		source = ```
+				let
+				    // Altere as datas abaixo conforme a necessidade do seu histórico
+				    DataMinima = #date(2026, 1, 1),
+				    DataMaxima = #date(2028, 12, 31),
+				    
+				    // Conta quantos dias existem no intervalo
+				    QuantidadeDias = Duration.Days(Duration.From(DataMaxima - DataMinima)) + 1,
+				    
+				    // Cria a lista de datas
+				    Origem = List.Dates(DataMinima, QuantidadeDias, #duration(1, 0, 0, 0)),
+				    #"Convertido para Tabela" = Table.FromList(Origem, Splitter.SplitByNothing(), null, null, ExtraValues.Error),
+				    #"Colunas Renomeadas" = Table.RenameColumns(#"Convertido para Tabela",{{"Column1", "Data"}}),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Colunas Renomeadas",{{"Data", type date}}),
+				    
+				    // Adiciona as colunas de tempo úteis para análise imobiliária
+				    #"Ano Inserido" = Table.AddColumn(#"Tipo Alterado", "Ano",  each Date.Year([Data]), type number),
+				    #"Nome do Mês Inserido" = Table.AddColumn(#"Ano Inserido", "Nome do Mês", each (Date.MonthName([Data])), type text),
+				    #"Mês Inserido" = Table.AddColumn(#"Nome do Mês Inserido", "Mês Num", each Date.Month([Data]), type number),
+				    #"Ano Mês Inserido" = Table.AddColumn(#"Mês Inserido", "Ano Mês Num", each Date.Year([Data]) * 100 + Date.Month([Data]), type number),
+				    #"Ano Mês Texto" = Table.AddColumn(#"Ano Mês Inserido", "Ano Mês", each Text.Start([Nome do Mês],3) & "/" & Text.From([Ano]), type text),
+				    #"Trimestre Inserido" = Table.AddColumn(#"Ano Mês Texto", "Trimestre", each "Tris " & Text.From(Date.QuarterOfYear([Data])), type text),
+				    #"Semestre Inserido" = Table.AddColumn(#"Trimestre Inserido", "Semestre", each if Date.Month([Data]) <= 6 then "1º Semestre" else "2º Semestre", type text),
+				    #"Dia da semana" = Table.AddColumn(#"Semestre Inserido", "Dia da semana", each Date.DayOfWeekName([Data]),type text ),
+				    #"Dia da semana numero" = Table.AddColumn( #"Dia da semana", "Dia da semana num", each Date.DayOfWeek([Data]), type number)
+				    
+				   
+				in
+				    #"Dia da semana numero"
+				```
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

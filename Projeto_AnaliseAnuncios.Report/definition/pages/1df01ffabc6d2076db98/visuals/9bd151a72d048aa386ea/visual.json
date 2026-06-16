@@ -1,0 +1,143 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "9bd151a72d048aa386ea",
+  "position": {
+    "x": 29.625935162094763,
+    "y": 486.58354114713217,
+    "z": 6,
+    "height": 232.51870324189525,
+    "width": 561.99501246882789,
+    "tabOrder": 3
+  },
+  "visual": {
+    "visualType": "scatterChart",
+    "query": {
+      "queryState": {
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_localidade"
+                    }
+                  },
+                  "Property": "bairro"
+                }
+              },
+              "queryRef": "dim_localidade.bairro",
+              "nativeQueryRef": "bairro"
+            }
+          ]
+        },
+        "Size": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "fato_anuncios"
+                        }
+                      },
+                      "Property": "area_m2"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "Sum(fato_anuncios.area_m2)",
+              "nativeQueryRef": "Média de area_m2"
+            }
+          ]
+        },
+        "X": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "fato_anuncios"
+                        }
+                      },
+                      "Property": "preco_atual"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "Sum(fato_anuncios.preco_atual)",
+              "nativeQueryRef": "Média de preco_atual",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "fato_anuncios"
+                        }
+                      },
+                      "Property": "Score_Oportunidade"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "Sum(fato_anuncios.Score_Oportunidade)",
+              "nativeQueryRef": "Média de Score_Oportunidade"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "valueAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "showGradientLegend": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,36 @@
+table Dim_Cascata
+	lineageTag: ddbca8e5-ec90-42fa-88e1-436ea95f5ae2
+
+	column Ordem
+		dataType: int64
+		formatString: 0
+		lineageTag: 5a3c560e-1347-4f0a-81ec-9f49bac77eb1
+		summarizeBy: sum
+		sourceColumn: Ordem
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Categoria Custos'
+		dataType: string
+		lineageTag: 004e46f8-edcc-4f0b-8a15-2346ba9b2cee
+		summarizeBy: none
+		sourceColumn: Categoria Custos
+		sortByColumn: Ordem
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Dim_Cascata = m
+		mode: import
+		source =
+				let
+				  Origem = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45WMlTSUXLMKU0vTc1RcCoqLclXitWJVjICijrn56Xk5x5em5cJETMGinkGhIQqxcYCAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Ordem = _t, #"Categoria Custos" = _t]),
+				  #"Tipo de coluna alterado" = Table.TransformColumnTypes(Origem, {{"Ordem", Int64.Type}, {"Categoria Custos", type text}})
+				in
+				  #"Tipo de coluna alterado"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+
